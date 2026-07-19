@@ -1,0 +1,164 @@
+{
+  "scenarios": [
+    {
+      "narrative": "A surge in enrollment overwhelms shared campus laboratories. Engineering, biology, and digital arts students are competing for limited lab time and equipment. The administration suggests a rigid top-down rationing system, but student groups argue that collaboration could unlock more efficient, fair access.",
+      "choices": [
+        {
+          "text": "Form a cross-disciplinary lab council with representatives from engineering, biology, and arts to co-design a shared schedule.",
+          "impact": {
+            "node_id": "Lab_Council",
+            "resource_change": 2.0,
+            "trust_change": 0.35,
+            "edge_weight_change": 0.15
+          }
+        },
+        {
+          "text": "Create a pooled booking system where departments trade time slots based on project urgency.",
+          "impact": {
+            "node_id": "Scheduling_Collective",
+            "resource_change": 1.5,
+            "trust_change": 0.30,
+            "edge_weight_change": 0.12
+          }
+        },
+        {
+          "text": "Launch a student-led lab mentorship program to share techniques and reduce redundant equipment use.",
+          "impact": {
+            "node_id": "Lab_Mentors",
+            "resource_change": 1.0,
+            "trust_change": 0.40,
+            "edge_weight_change": 0.10
+          }
+        }
+      ]
+    },
+    {
+      "narrative": "A student climate coalition pushes for fossil-fuel divestment, but the administration demands a unified, evidence-based plan. Environmental science students hold climate data, economics students model financial impacts, and communications majors craft narratives. Without collaboration, the movement risks fragmentation.",
+      "choices": [
+        {
+          "text": "Create a cross-disciplinary divestment task force combining climate data, economic modeling, and strategic messaging.",
+          "impact": {
+            "node_id": "Divestment_Task_Force",
+            "resource_change": 1.5,
+            "trust_change": 0.45,
+            "edge_weight_change": 0.18
+          }
+        },
+        {
+          "text": "Host an open forum where students from multiple disciplines co-author a divestment white paper.",
+          "impact": {
+            "node_id": "Climate_Forum",
+            "resource_change": 1.0,
+            "trust_change": 0.35,
+            "edge_weight_change": 0.12
+          }
+        },
+        {
+          "text": "Partner with law and policy students to draft a formal proposal for the university’s investment committee.",
+          "impact": {
+            "node_id": "Policy_Coalition",
+            "resource_change": 0.8,
+            "trust_change": 0.40,
+            "edge_weight_change": 0.14
+          }
+        }
+      ]
+    },
+    {
+      "narrative": "The university’s open-source learning platform is hit by a coordinated cyber attack. Malicious commits spread through the repository. Computer science students can identify the technical breach, but governance rules require consensus from contributors across departments.",
+      "choices": [
+        {
+          "text": "Assemble a rapid-response governance group of security, philosophy, and law students to define emergency rules.",
+          "impact": {
+            "node_id": "Governance_Response_Group",
+            "resource_change": 1.2,
+            "trust_change": 0.40,
+            "edge_weight_change": 0.16
+          }
+        },
+        {
+          "text": "Create a cross-department incident review board to approve a secure rollback and patch strategy.",
+          "impact": {
+            "node_id": "Incident_Review_Board",
+            "resource_change": 1.0,
+            "trust_change": 0.35,
+            "edge_weight_change": 0.13
+          }
+        },
+        {
+          "text": "Launch an open call for contributors from multiple disciplines to co-design a new governance protocol.",
+          "impact": {
+            "node_id": "Protocol_Design_Collective",
+            "resource_change": 0.9,
+            "trust_change": 0.45,
+            "edge_weight_change": 0.20
+          }
+        }
+      ]
+    },
+    {
+      "narrative": "A burst pipe floods a residence hall, displacing hundreds of students. Facilities proposes a rigid reassignment plan, but it ignores accessibility, mental health, and social support needs. Architecture, psychology, and public health students see an opportunity for a more humane, data-driven solution.",
+      "choices": [
+        {
+          "text": "Form a housing resilience team combining architecture, psychology, and public health to redesign temporary allocations.",
+          "impact": {
+            "node_id": "Housing_Resilience_Team",
+            "resource_change": 1.8,
+            "trust_change": 0.42,
+            "edge_weight_change": 0.17
+          }
+        },
+        {
+          "text": "Develop a collaborative mapping tool that prioritizes accessibility and social support in room assignments.",
+          "impact": {
+            "node_id": "Accessibility_Mapping_Group",
+            "resource_change": 1.3,
+            "trust_change": 0.38,
+            "edge_weight_change": 0.14
+          }
+        },
+        {
+          "text": "Coordinate peer support networks across departments to reduce stress during relocation.",
+          "impact": {
+            "node_id": "Peer_Support_Network",
+            "resource_change": 0.7,
+            "trust_change": 0.40,
+            "edge_weight_change": 0.10
+          }
+        }
+      ]
+    },
+    {
+      "narrative": "A campus blackout sparks interest in building a student-designed renewable microgrid. Electrical engineering students sketch technical layouts, environmental science students model emissions reductions, and business students calculate long-term savings. Without alignment, the proposal stalls.",
+      "choices": [
+        {
+          "text": "Create a microgrid design consortium that merges engineering feasibility, climate modeling, and financial analysis.",
+          "impact": {
+            "node_id": "Microgrid_Consortium",
+            "resource_change": 2.0,
+            "trust_change": 0.50,
+            "edge_weight_change": 0.20
+          }
+        },
+        {
+          "text": "Host a cross-disciplinary hackathon to prototype microgrid scenarios and present them to facilities.",
+          "impact": {
+            "node_id": "Microgrid_Hackathon_Team",
+            "resource_change": 1.4,
+            "trust_change": 0.37,
+            "edge_weight_change": 0.15
+          }
+        },
+        {
+          "text": "Partner with policy and communications students to craft a compelling case for pilot implementation.",
+          "impact": {
+            "node_id": "Microgrid_Advocacy_Group",
+            "resource_change": 1.0,
+            "trust_change": 0.40,
+            "edge_weight_change": 0.13
+          }
+        }
+      ]
+    }
+  ]
+}
