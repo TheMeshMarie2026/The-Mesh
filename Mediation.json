@@ -1,0 +1,6 @@
+{
+  "action_type": "mediation",
+  "mediator": "",
+  "conflicting_nodes": ["", ""],
+  "impact": { ... }
+}
