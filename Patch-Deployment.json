@@ -1,0 +1,6 @@
+{
+  "action_type": "patch_deployment",
+  "dev_nodes": ["", ""],
+  "patch_id": "",
+  "impact": { ... }
+}
