@@ -1,0 +1,3 @@
+Hello
+
+You can delete this after you have actual files in this folder
