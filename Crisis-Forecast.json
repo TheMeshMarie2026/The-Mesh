@@ -1,0 +1,6 @@
+{
+  "action_type": "crisis_forecast",
+  "forecasting_nodes": ["", ""],
+  "forecast_horizon": "",
+  "impact": { ... }
+}
