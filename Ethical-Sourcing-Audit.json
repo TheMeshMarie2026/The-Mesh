@@ -1,0 +1,6 @@
+{
+  "action_type": "ethical_sourcing_audit",
+  "auditors": ["", ""],
+  "supplier_nodes": ["", ""],
+  "impact": { ... }
+}
