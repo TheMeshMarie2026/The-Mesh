@@ -1,0 +1,6 @@
+{
+  "action_type": "knowledge_pooling",
+  "teams_contributing": ["", ""],
+  "knowledge_assets": ["", ""],
+  "impact": { ... }
+}
