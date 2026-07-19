@@ -1,0 +1,6 @@
+{
+  "action_type": "resource_pooling",
+  "contributors": ["", ""],
+  "pool_id": "",
+  "impact": { ... }
+}
