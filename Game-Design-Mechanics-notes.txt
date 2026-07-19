@@ -1,0 +1,16 @@
+Game Design & Mechanics Prompts
+Use these prompts to establish the foundational rules and systems of your game.
+• Role Fluidity: "Act as a game designer. Create a mechanic where player roles automatically shift based on the specific global crisis (e.g., a medical expert becomes the temporary leader during a pandemic, but yields control to an engineer during an infrastructure failure). How do we score this fluid transition?"
+• Resource Routing: "Design a decentralized resource allocation system for a strategy game. Players must route supplies without a central bank or government command. What algorithmic or peer-to-peer trading rules can simulate this smoothly?"
+• Knowledge Sharing: "Propose a mechanic for an educational game called 'The Knowledge Commons.' How can players pool individual data points into a shared network where the most relevant data automatically surfaces to the players who need it most?"
+Scenario Generation Prompts
+Use these to build complex, multi-layered global crises that cannot be solved by a traditional, top-down hierarchy.
+• Complex Crisis: "Generate a game scenario involving a simultaneous climate event and supply chain collapse. Write it so that a centralized government response fails due to bureaucracy, forcing players to use a network of local communities (a heterarchy) to solve it."
+• Asymmetric Information: "Create a scenario prompt for a cooperative game where 4 players hold different pieces of information about a cyber-warfare crisis. Design the communication constraints so they must self-organize into a heterarchical network to piece the puzzle together."
+Educational & Assessment Prompts
+Use these prompts to ensure players are actually learning the concepts of heterarchy rather than just playing a standard strategy game.
+• Debrief Questions: "Create a list of 5 post-game debrief questions for students. Focus on helping them reflect on when they decided to give up leadership, how knowledge was shared, and the friction points of decentralized decision-making."
+• Learning Metrics: "How can I track and measure 'heterarchical efficiency' in a digital game? Provide a framework for logging player data that shows whether they are collaborating fluidly or falling back into rigid, inefficient hierarchies."
+AI NPC & Agent Prompts
+If your game uses AI-controlled factions or NPCs, use these prompts to program their behavior.
+• Autonomous Node Behavior: "Write a prompt for an AI agent in a simulation game. The agent represents a local community node. It must autonomously decide to share its food resources with neighboring nodes based on trust metrics and immediate threat levels, without waiting for a central command."
