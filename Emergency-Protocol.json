@@ -1,0 +1,6 @@
+{
+  "action_type": "emergency_protocol",
+  "authors": ["", ""],
+  "protocol_id": "",
+  "impact": { ... }
+}
