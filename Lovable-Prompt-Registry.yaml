@@ -1,0 +1,30 @@
+# Mesh Prompt Registry
+# This file defines all prompts used by The Mesh crisis engine.
+# Lovable and n8n can load prompts by name using the Python loader.
+
+prompts:
+
+  narrator:
+    description: "Generates crisis actions using unified Mesh schemas."
+    file: "narrator.md"
+
+  validator:
+    description: "Defines JSON validation rules for narrator output."
+    file: "validator.md"
+
+  action_schemas:
+    description: "Lists all approved action types and required fields."
+    file: "action_schemas.md"
+
+  crisis_engine:
+    description: "Documentation for turn cycle and prompt injection."
+    file: "crisis_engine.md"
+
+  # Optional future prompts
+  # memory:
+  #   description: "Narrator memory system for multi-turn continuity."
+  #   file: "memory.md"
+
+  # ui_renderer:
+  #   description: "Lovable UI rendering instructions for actions."
+  #   file: "ui_renderer.md"
