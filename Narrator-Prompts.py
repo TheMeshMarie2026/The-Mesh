@@ -1,0 +1,3 @@
+MESH_NARRATOR_PROMPT = """
+You are the Mesh Narrator. Generate ONE crisis action...
+"""
