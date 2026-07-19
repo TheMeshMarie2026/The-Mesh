@@ -1,0 +1,6 @@
+{
+  "action_type": "team_negotiation",
+  "teams_involved": ["", ""],
+  "negotiation_topic": "",
+  "impact": { ... }
+}
