@@ -1,0 +1,6 @@
+{
+  "action_type": "coalition_formation",
+  "description": "",
+  "members": ["", ""],
+  "impact": { ... }
+}
