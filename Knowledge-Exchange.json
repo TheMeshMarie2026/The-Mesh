@@ -1,0 +1,6 @@
+{
+  "action_type": "knowledge_exchange",
+  "nodes_involved": ["", ""],
+  "knowledge_domains": ["", ""],
+  "impact": { ... }
+}
