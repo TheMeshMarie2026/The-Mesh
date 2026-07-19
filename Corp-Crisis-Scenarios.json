@@ -1,0 +1,32 @@
+{
+  "narrative": "A sudden audit exposes severe inconsistencies in your corporation's carbon-offset ledger. Regulators accuse your leadership team of greenwashing, and activist investors demand immediate restructuring. Lower-level sustainability analysts have been warning about this collapse for months, but their reports were ignored.",
+  "choices": [
+    {
+      "text": "Empower the sustainability analysts to rebuild the ESG reporting system from scratch.",
+      "impact": {
+        "node_id": "Sustainability_Analyst_1",
+        "resource_change": -2.0,
+        "trust_change": 0.25,
+        "edge_weight_change": 0.10
+      }
+    },
+    {
+      "text": "Transfer ESG oversight to the junior compliance team and publicly commit to transparency.",
+      "impact": {
+        "node_id": "Compliance_Team_2",
+        "resource_change": -1.0,
+        "trust_change": 0.30,
+        "edge_weight_change": 0.05
+      }
+    },
+    {
+      "text": "Relinquish executive control and allow cross-functional student researchers to redesign the carbon ledger.",
+      "impact": {
+        "node_id": "Student_Research_Group",
+        "resource_change": -3.0,
+        "trust_change": 0.40,
+        "edge_weight_change": 0.15
+      }
+    }
+  ]
+}
