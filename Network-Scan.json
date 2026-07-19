@@ -1,0 +1,6 @@
+{
+  "action_type": "network_scan",
+  "scanning_node": "",
+  "scan_targets": ["", ""],
+  "impact": { ... }
+}
