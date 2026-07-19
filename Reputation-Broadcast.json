@@ -1,0 +1,6 @@
+{
+  "action_type": "reputation_broadcast",
+  "origin_node": "",
+  "audience_nodes": ["", ""],
+  "impact": { ... }
+}
