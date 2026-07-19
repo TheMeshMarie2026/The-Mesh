@@ -1,0 +1,6 @@
+{
+  "action_type": "arbitration",
+  "arbitrator": "",
+  "parties": ["", ""],
+  "impact": { ... }
+}
