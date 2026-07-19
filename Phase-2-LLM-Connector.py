@@ -166,3 +166,27 @@ if __name__ == "__main__":
 
     print("--- Testing Corporate Leader RPG Pipeline ---")
     corp_bridge = LLMNarrativeBridge(target_profile="Corporate Leaders and Executives")
+    corp_event = corp_bridge.execute_narrative_generation(simulated_turn_report)
+print(f"Generated Event Title: {corp_event['title']}")
+print(f"Scenario Description: {corp_event['scenario']}")
+print(f"Option 1 Impact Array: {corp_event['choices'][0]['impact']}")
+print("\n--- Testing University Student RPG Pipeline ---")
+student_bridge = LLMNarrativeBridge(target_profile="University Students and Academics")
+student_event = student_bridge.execute_narrative_generation(simulated_turn_report)
+print(f"Generated Event Title: {student_event['title']}")
+print(f"Scenario Description: {student_event['scenario']}")
+print(f"Option 2 Justification: {student_event['choices'][1]['justification']}")
+
+### 🔁 Closing the Loop
+To apply the chosen roleplaying option back to your engine state, extract the selected option's `impact` sub-object and pass it straight back to your core classes:
+
+```python
+# Pseudo-execution step inside your main engine loop:
+user_choice = corp_event["choices"][0] # Player picks option 1
+# Mutate the numerical graph parameters directly from the text-based selection
+engine.adjust_node_inventory("Tech_Corp", "Water_Filters", user_choice["impact"]["resource_delta"])
+engine.modify_edge_trust("Tech_Corp", "Medical_Camp", user_choice["impact"]["trust_delta"])
+
+# Now that the complete pipeline is established—from the network graph to routing, turn checks, metric visuals, 
+#and structured LLM storytelling—you have a fully functional game loop.
+
