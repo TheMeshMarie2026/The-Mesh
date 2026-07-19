@@ -17,23 +17,24 @@ A narrative engine that explains consequences, forecasts risks, and guides playe
 
 A teaching tool for:
 
-crisis leadership
+> * crisis leadership
 
-negotiation
+> * negotiation
 
-coalition‑building
+> * coalition‑building
 
-ethical decision‑making
+> * ethical decision‑making
 
-resource management
+> * resource management
 
-systems thinking
+> * systems thinking
 
 The Mesh can run:
 
-Classroom Mode — collaborative learning, guided facilitation, structured crisis cycles.
+1) Classroom Mode — collaborative learning, guided facilitation, structured crisis cycles.
 
-Corporate Mode — high‑pressure scenarios, competitive negotiation, complex resource constraints.
+1) Corporate Mode — high‑pressure scenarios, competitive negotiation, complex resource constraints.
+
 
 ⚙️ How the Engine Works
 The Mesh engine processes each turn through a unified pipeline:
@@ -41,39 +42,39 @@ The Mesh engine processes each turn through a unified pipeline:
 Players submit actions  
 (Actions are defined in /schemas/actions/*.json)
 
-Actions are validated
+* Actions are validated
 
-Schema validation
+* Schema validation
 
-Rule checks
+* Rule checks
 
-Difficulty scaling
+* Difficulty scaling
 
-Context checks
+* Context checks
 
-Impacts are applied to the graph
+* Impacts are applied to the graph
 
-NetworkX graph updates
+* NetworkX graph updates
 
-Trust, threat, resources, alliances
+* Trust, threat, resources, alliances
 
-Node merges, splits, coordination models
+* Node merges, splits, coordination models
 
-Narrator generates feedback
+* Narrator generates feedback
 
-Consequences
+* Consequences
 
-Forecasts
+* Forecasts
 
-Threat decay
+* Threat decay
 
-Narrative hooks
+* Narrative hooks
 
-Crisis loop updates global state
+* Crisis loop updates global state
 
-Crisis escalation
+* Crisis escalation
 
-Protocol triggers
+* Protocol triggers
 
 Emergency overrides
 
