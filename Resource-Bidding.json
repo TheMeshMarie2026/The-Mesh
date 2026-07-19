@@ -1,0 +1,6 @@
+{
+  "action_type": "resource_bidding",
+  "bidders": ["", ""],
+  "resource_type": "",
+  "impact": { ... }
+}
