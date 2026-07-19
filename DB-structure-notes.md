@@ -11,7 +11,7 @@ The goal is a highly normalized, high-performance database schema that tracks th
 1. GameSession Table (Global Status)
 Tracks the active players, the overall health of the environment, and whether the game is won or lost.
 
-|Column Name	|Data Type	|Constraints / Description
+|Column Name	|Data Type	|Constraints / Description|
 |-------|-----|-------|
 |session_id	|UUID	|Primary Key
 |player_count	|Integer	|Number of active participants (humans + AI bots)
@@ -23,7 +23,8 @@ Tracks the active players, the overall health of the environment, and whether th
 
 2. GameTurn Table (Crisis Definition)
 Stores the unique attributes of the threat spawned at the start of each turn.
-|Column Name	|Data Type	|Constraints / Description
+
+|Column Name	|Data Type	|Constraints / Description|
 |-------|-----|-------|
 |turn_id	|UUID	|Primary Key
 |session_id	|UUID	|Foreign Key referencing GameSession(session_id)
@@ -40,7 +41,8 @@ Stores the unique attributes of the threat spawned at the start of each turn.
 
 4. TurnNodeState Table (The Heterarchy Dynamic)
 This is the most critical table. It logs how individual node vectors and priority scores dynamically mutate contextually turn-by-turn.
-|Column Name	|Data Type	|Constraints / Description
+
+|Column Name	|Data Type	|Constraints / Description|
 |-------|-----|-------|
 |state_id	|UUID	|Primary Key
 |turn_id	|UUID	|Foreign Key referencing GameTurn(turn_id)
