@@ -1,0 +1,6 @@
+{
+  "action_type": "trust_pledge",
+  "pledging_nodes": ["", ""],
+  "conditions": "",
+  "impact": { ... }
+}
