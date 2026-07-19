@@ -1,0 +1,6 @@
+{
+  "action_type": "referendum",
+  "voting_nodes": ["", ""],
+  "options": ["", ""],
+  "impact": { ... }
+}
