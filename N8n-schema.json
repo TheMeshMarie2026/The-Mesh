@@ -1,0 +1,31 @@
+    "node_id": {
+      "type": "string",
+      "description": "The exact ID of the AI agent speaking (e.g., 'AI_Medic_Agent')."
+    },
+    "network_stance": {
+      "type": "string",
+      "enum": ["LEADERSHIP", "DEFERRAL"],
+      "description": "Must be 'LEADERSHIP' if this node is Rank 1 and taking charge, or 'DEFERRAL' if it is yielding to another node."
+    },
+    "target_node": {
+      "type": "string",
+      "description": "If network_stance is DEFERRAL, this must be the ID of the node being deferred to. If LEADERSHIP, this should be 'ALL'."
+    },
+    "dialogue": {
+      "type": "string",
+      "description": "The immersive, 1-3 sentence in-character chat message addressed to the network explaining their operational stance."
+    },
+    "allocated_resources": {
+      "type": "object",
+      "description": "The percentage of resources this node is offering to deploy this turn based on its stance.",
+      "properties": {
+        "medical": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "logistics": { "type": "number", "minimum": 0.0, "maximum": 1.0 },
+        "water": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+      },
+      "required": ["medical", "logistics", "water"]
+    }
+  },
+  "required": ["node_id", "network_stance", "target_node", "dialogue", "allocated_resources"],
+  "additionalProperties": false
+}
