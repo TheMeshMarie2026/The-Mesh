@@ -7,13 +7,15 @@ The goal is a highly normalized, high-performance database schema that tracks th
 
 1. GameSession Table (Global Status)
 Tracks the active players, the overall health of the environment, and whether the game is won or lost.
-Column Name	Data Type	Constraints / Description
-session_id	UUID	Primary Key
-player_count	Integer	Number of active participants (humans + AI bots)
-ecosystem_health	Float	Current health of the environment (0.0 to 100.0)
-current_turn	Integer	Track progression (1 through 10)
-game_status	Enum	['ACTIVE', 'VICTORY', 'COLLAPSE']
-created_at	Timestamp	Session initiation marker
+
+|Column Name	|Data Type	|Constraints / Description
+|-------|-----|-------|
+|session_id	|UUID	|Primary Key
+|player_count	|Integer	|Number of active participants (humans + AI bots)
+|ecosystem_health	|Float	|Current health of the environment (0.0 to 100.0)
+|current_turn	|Integer	|Track progression (1 through 10)
+|game_status	|Enum	|['ACTIVE', 'VICTORY', 'COLLAPSE']
+|created_at	|Timestamp	|Session initiation marker
 
 2. GameTurn Table (Crisis Definition)
 Stores the unique attributes of the threat spawned at the start of each turn.
