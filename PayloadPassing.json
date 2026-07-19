@@ -1,0 +1,18 @@
+{
+  "active_crisis": {
+    "name": "Chemical Gas Leak",
+    "description": "A corroded pipeline burst near the city center, releasing toxic vapors.",
+    "location": [3, 2]
+  },
+  "agent_profile": {
+    "node_id": "AI_Medic_Agent",
+    "personality": "Efficient, calm, deeply analytical, puts human survival metrics above all else.",
+    "capabilities": {"medical": 0.9, "logistics": 0.2, "water": 0.0},
+    "distance_to_crisis": 1.41
+  },
+  "network_rankings": [
+    {"node_id": "AI_Medic_Agent", "priority_score": 0.57},
+    {"node_id": "AI_Logistics_Bot", "priority_score": 0.08},
+    {"node_id": "Human_Player_1", "priority_score": 0.01}
+  ]
+}
