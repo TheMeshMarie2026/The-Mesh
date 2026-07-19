@@ -1,0 +1,6 @@
+{
+  "action_type": "carbon_rebalance",
+  "nodes_involved": ["", ""],
+  "carbon_units": 0,
+  "impact": { ... }
+}
