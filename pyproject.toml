@@ -1,0 +1,256 @@
+# ============================================================
+# The Mesh Project - Python Project Configuration
+# ============================================================
+#
+# This file is the central configuration file for the project.
+#
+# It controls:
+#   - package metadata
+#   - Python version requirements
+#   - dependencies
+#   - testing
+#   - code formatting
+#   - linting
+#
+# Modern Python projects use pyproject.toml instead of:
+#
+#   setup.py
+#   setup.cfg
+#   tox.ini
+#   pytest.ini
+#
+# ============================================================
+
+
+# ------------------------------------------------------------
+# BUILD SYSTEM
+# ------------------------------------------------------------
+#
+# Defines how Python builds this package.
+#
+# setuptools is intentionally used because it is:
+# - mature
+# - widely supported
+# - compatible with most tooling
+#
+# ------------------------------------------------------------
+
+[build-system]
+
+requires = [
+    "setuptools>=68",
+    "wheel"
+]
+
+build-backend = "setuptools.build_meta"
+
+
+
+# ------------------------------------------------------------
+# PROJECT METADATA
+# ------------------------------------------------------------
+#
+# This describes The Mesh as an installable Python package.
+#
+# When complete, users should eventually be able to run:
+#
+#     pip install .
+#
+# and import:
+#
+#     import mesh
+#
+# ------------------------------------------------------------
+
+[project]
+
+name = "the-mesh"
+
+version = "0.1.0"
+
+description = """
+The Mesh simulation and orchestration framework.
+"""
+
+readme = "README.md"
+
+requires-python = ">=3.11"
+
+
+# Add your real dependencies here as the architecture stabilizes.
+#
+# Examples:
+#
+# dependencies = [
+#     "pydantic",
+#     "networkx",
+#     "pytest"
+# ]
+#
+# Leaving this empty initially is intentional.
+# We do not want to accidentally freeze experimental
+# dependencies during cleanup.
+
+dependencies = []
+
+
+
+# ------------------------------------------------------------
+# PACKAGE DISCOVERY
+# ------------------------------------------------------------
+#
+# Tells setuptools where the Python package lives.
+#
+# Expected future structure:
+#
+#     mesh/
+#       __init__.py
+#       engine/
+#       graph/
+#       mechanics/
+#
+# ------------------------------------------------------------
+
+[tool.setuptools.packages.find]
+
+where = [
+    "."
+]
+
+include = [
+    "mesh*"
+]
+
+
+
+# ------------------------------------------------------------
+# PYTEST CONFIGURATION
+# ------------------------------------------------------------
+#
+# Controls automated testing.
+#
+# Running:
+#
+#     pytest
+#
+# will automatically discover:
+#
+#     tests/test_*.py
+#
+# ------------------------------------------------------------
+
+[tool.pytest.ini_options]
+
+testpaths = [
+    "tests"
+]
+
+python_files = [
+    "test_*.py"
+]
+
+python_classes = [
+    "Test*"
+]
+
+python_functions = [
+    "test_*"
+]
+
+
+
+# ------------------------------------------------------------
+# RUFF CONFIGURATION
+# ------------------------------------------------------------
+#
+# Ruff replaces several older tools:
+#
+# flake8
+# isort
+# pyflakes
+# pycodestyle
+#
+# It provides:
+#
+# - import cleanup
+# - style checking
+# - common bug detection
+#
+# ------------------------------------------------------------
+
+[tool.ruff]
+
+line-length = 88
+
+target-version = "py311"
+
+
+
+[tool.ruff.lint]
+
+select = [
+
+    # Pyflakes:
+    # catches unused imports,
+    # undefined variables, etc.
+    "F",
+
+    # pycodestyle:
+    # standard Python style checks
+    "E",
+
+    # import sorting
+    "I",
+
+    # bug prevention rules
+    "B"
+]
+
+
+ignore = [
+    # Add temporary exceptions here
+    # during migration.
+]
+
+
+
+# ------------------------------------------------------------
+# FORMATTER CONFIGURATION
+# ------------------------------------------------------------
+#
+# Ruff formatter behaves similarly to Black.
+#
+# This ensures every contributor formats code
+# the same way.
+#
+# ------------------------------------------------------------
+
+[tool.ruff.format]
+
+quote-style = "double"
+
+indent-style = "space"
+
+
+
+# ------------------------------------------------------------
+# COVERAGE CONFIGURATION
+# ------------------------------------------------------------
+#
+# Future-proofing for test coverage.
+#
+# Eventually:
+#
+# pytest --cov
+#
+# will measure tested code.
+#
+# ------------------------------------------------------------
+
+[tool.coverage.run]
+
+branch = true
+
+source = [
+    "mesh"
+]
