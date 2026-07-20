@@ -49,6 +49,7 @@ from mechanics.Resource-Routing-Negotiation-Trigger import routing_negotiation_t
 from mechanics.Crisis-Forecast import crisis_forecast
 from mechanics.PROCUREMENT-Data-DRIVERS import procurement_drivers
 from mechanics.Rules-Checklist import rules_checklist
+from mechanics import registry as mechanics_registry
 
 
 # -----------------------------
@@ -122,6 +123,11 @@ MECHANICS = {
     "crisis_forecast": crisis_forecast,
     "procurement_drivers": procurement_drivers,
 }
+def run_action(graph, action: dict):
+    mechanic = mechanics_registry.get(action["type"])
+    if not mechanic.validate(action):
+        raise ValueError(f"Action failed schema validation: {action}")
+    return mechanic.execute(graph, action)
 
 
 # -----------------------------
